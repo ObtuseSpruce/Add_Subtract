@@ -16,21 +16,26 @@ const colorEvent = () => {
         display.style.color = "#BC8FBD"
     }
 }
+
 //adds input value to the current value
 const plusEvent = () => {
-    const parse = parseInt(input.value)
-    value = (value + parse)
+    let parse = parseInt(input.value)
+    let parse2 = parse || 0 
+    value = (value + parse2)
     colorEvent()
     display.textContent = value
+  
 }
 
 //subtracts input value from the current value
 const minusEvent = () => {
-    const parse = parseInt(input.value)
-    value = (value - parse)
+    let parse = parseInt(input.value)
+    let parse2 = parse || 0 
+    value = (value - parse2)
     colorEvent()
     display.textContent = value
 }
+
 //clears the display and resets value
 const clearDisplay = () => {
     value = 0
