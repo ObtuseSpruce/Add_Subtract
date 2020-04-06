@@ -20,17 +20,16 @@ const colorEvent = () => {
 //adds input value to the current value
 const plusEvent = () => {
     let parse = parseInt(input.value)
-    let parse2 = parse || 0 
+    let parse2 = parse || 1 
     value = (value + parse2)
     colorEvent()
     display.textContent = value
-  
 }
 
 //subtracts input value from the current value
 const minusEvent = () => {
     let parse = parseInt(input.value)
-    let parse2 = parse || 0 
+    let parse2 = parse || 1 
     value = (value - parse2)
     colorEvent()
     display.textContent = value
